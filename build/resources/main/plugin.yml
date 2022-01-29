@@ -1,0 +1,7 @@
+name: KOTHCore
+main: com.misledwater.koth.KOTHCore
+version: "1.0.0"
+api: ["1.0.0"]
+author: MisledWater79
+description: "The King of the Hill KOTHCore"
+load: STARTUP

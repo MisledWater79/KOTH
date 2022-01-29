@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'org.misledwater.koth'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+repositories {
+    mavenCentral()
+    maven {
+        url = 'https://repo.nukkitx.com/maven-snapshots'
+    }
+}
+
+dependencies {
+    implementation 'cn.nukkit:nukkit:1.0-SNAPSHOT'
+
+    implementation fileTree(dir: 'libs/runtime', include: '*.jar')
+}
+
+test {
+    useJUnitPlatform()
+}
